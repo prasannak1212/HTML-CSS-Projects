@@ -1,0 +1,383 @@
+@font-face {
+    font-family: ShortBaby;
+    src: url(ShortBaby-Mg2w.ttf);
+}
+
+* a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Sedan SC', sans-serif;
+    background-color: #ebe5e5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left {
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 90vh;;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.left img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile p {
+    font-weight: 250;
+    font-size: 24px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    width: 150px;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.nav-items:hover {
+    color: gold;
+}
+
+.nav-items>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.nav-items>a:hover {
+    color: lightcyan;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.right h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.right h3:not(.footer-h3):hover {
+    text-decoration-color: goldenrod;
+    font-size: 32px;
+    transition: 0.5s;
+}
+
+.right header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+header h1 {
+    margin-left: 50px;
+}
+
+header input {   
+    border: none;
+    font-family: 'Sedan';
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    /* margin-right: 6%; */
+}
+
+header input::placeholder {
+    color: grey;
+}
+
+header input:focus {
+    outline: none;
+    border: 2px solid rgb(48, 244, 48);
+}
+
+#board {
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    width: 85%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#board img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#data {
+    padding: 10px;
+    margin: 10px;
+}
+
+#data>.data-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.data-box .box{
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 15px;
+    width: 150px;
+    margin: 10px;
+    font-family: ShortBaby, sans-serif;
+}
+
+.data-box .box:hover {
+    background: radial-gradient(#f8a7ec 0%, #8dc7eb 100%);
+}
+
+.data-box .box p {
+    margin: 0;;
+    padding: 3px;
+}
+
+.box1 {
+    background-color: #b3f997;
+}
+
+.box1 i {
+    align-self: flex-end;
+}
+
+.box2 {
+    background-color: #f7a8f5;
+}
+
+.box2 i {
+    align-self: flex-end;
+}
+
+.box3 {
+    background-color: #97cff1;
+}
+
+.box3 i {
+    align-self: flex-end;
+}
+
+.box4 {
+    background-color: #f69c6b;
+}
+
+.box4 i {
+    align-self: flex-end;
+}
+
+#users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+th {
+    background-color: #e1f322;
+    color: black;
+    padding: 10px;
+}
+
+td {
+    color: black;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+    background-color: lightgrey;
+}
+
+#schedule {
+    height: 500px;
+    width: 75%;
+    align-self: center;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#schedule .head {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+}
+
+#schedule .meetings {
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+}
+
+#schedule .meetings div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 5px;
+    margin: 10px;
+    /* border-radius: 20px; */
+    height:80px;
+}
+
+#schedule .meetings div p,h4 {
+    padding: 3px;
+    margin: 0;
+}
+
+#schedule .meetings div:nth-child(odd) {
+    border-left: 5px solid #3650e5;
+}
+
+#schedule .meetings div:nth-child(even) {
+    border-left: 5px solid #2ef11c;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contact .location iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#contact .detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+}
+
+#contact div:not(.detail) {
+    border: 2px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.feedback h4 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form input,textarea {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-family: Sedan;
+}
+
+form input:focus, textarea:focus {
+    border: 2px solid #1fed45;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #1fed45;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    /* margin: 10px; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+footer i {
+    font-size: 32px;
+    margin: 15px;
+    color: #fff;
+}
+
+footer i:hover {
+    color: gold;
+}
