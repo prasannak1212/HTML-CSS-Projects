@@ -381,29 +381,3 @@ footer i {
 footer i:hover {
     color: gold;
 }
-
-
-/* Media query for Tablet View */ 
-
-@media screen and (max-width: 780px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        position: sticky;
-        top: 20px;
-        flex-wrap: wrap;
-        background-color: black;
-        height: 20vh;
-        border-radius: 30px;
-        color: #fff;
-        padding: 10px;
-    }
-}
