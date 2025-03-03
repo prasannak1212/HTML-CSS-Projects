@@ -15,28 +15,28 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.2rem;
+    padding: 1.2rem;
 }
 
 .left {
     position: sticky;
-    top: 20px;
+    top: 1.2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: black;
     height: 90vh;;
-    border-radius: 30px;
-    justify-content: space-around;
+    border-radius: 2rem;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .left img {
-    width: 100px;
-    height: 100px;
+    width: 6.4rem;
+    height: 6.4rem;
     border-radius: 50%;
 }
 
@@ -48,17 +48,24 @@ main {
 
 .profile p {
     font-weight: 250;
-    font-size: 24px;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
 }
 
 .nav-items {
     display: flex;
-    gap: 20px;
-    width: 150px;
+    gap: 1.2rem;
+    width: 10rem;
     align-items: center;
-    padding-right: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-right: 1.2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .nav-items:hover {
@@ -68,8 +75,8 @@ main {
 .nav-items>a {
     text-decoration: none;
     color: #fff;
-    padding: 5px;
-    font-size: 16px;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 .nav-items>a:hover {
@@ -79,9 +86,9 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    gap: 20px;    
-    border-radius: 30px;
-    padding: 30px;
+    gap: 1.2rem;    
+    border-radius: 2rem;
+    padding: 2rem;
 }
 
 .right h3 {
@@ -91,7 +98,7 @@ main {
 
 .right h3:not(.footer-h3):hover {
     text-decoration-color: goldenrod;
-    font-size: 32px;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
@@ -99,20 +106,20 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    gap: 20px;
+    padding: 0.5rem;
+    gap: 1.2rem;
 }
 
 header h1 {
-    margin-left: 50px;
+    margin-left: 3rem;
 }
 
 header input {   
     border: none;
     font-family: 'Sedan';
     background-color: #fff;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
     /* margin-right: 6%; */
 }
 
@@ -127,11 +134,11 @@ header input:focus {
 
 #board {
     align-self: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.5rem;
+    margin: 0.5rem;
     width: 85%;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 1.2rem;
 }
 
 #board img {
@@ -141,24 +148,24 @@ header input:focus {
 }
 
 #data {
-    padding: 10px;
-    margin: 10px;
+    padding: 1.2rem;
+    margin: 1.2rem;
 }
 
 #data>.data-box {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0.5rem;
     justify-content: space-around;
 }
 
 .data-box .box{
     display: flex;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     flex-direction: column;
-    padding: 15px;
-    width: 150px;
-    margin: 10px;
+    padding: 1rem;
+    width: 8rem;
+    margin: 0.5rem;
     font-family: ShortBaby, sans-serif;
 }
 
@@ -212,9 +219,9 @@ header input:focus {
 table {
     border: none;
     border-collapse: collapse;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
+    margin: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
     text-align: center;
     width: 70%;
     background-color: #fff;
@@ -224,12 +231,12 @@ table {
 th {
     background-color: #e1f322;
     color: black;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 td {
     color: black;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 tbody tr:nth-child(even) {
@@ -241,13 +248,13 @@ tbody tr:hover {
 }
 
 #schedule {
-    height: 500px;
+    height: 32rem;
     width: 75%;
     align-self: center;
     background-color: #fff;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 1.2rem;
     overflow: hidden;
 }
 
@@ -255,15 +262,15 @@ tbody tr:hover {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 10px;
-    margin: 10px;
-    gap: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1.2rem;
 }
 
 #schedule .meetings {
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
+    height: 19.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     overflow-y: scroll;
 }
 
@@ -272,9 +279,9 @@ tbody tr:hover {
     flex-direction: column;
     align-items: start;
     padding: 5px;
-    margin: 10px;
+    margin: 0.5rem;
     /* border-radius: 20px; */
-    height:80px;
+    height: 5rem;
 }
 
 #schedule .meetings div p,h4 {
@@ -293,11 +300,11 @@ tbody tr:hover {
 #contact {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.2rem;
     align-self: center;
     width: 95%;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 #contact .location iframe {
@@ -310,13 +317,17 @@ tbody tr:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-    gap: 10px;
+    gap: 1.2rem;
 }
 
 #contact div:not(.detail) {
     border: 2px solid grey;
-    border-radius: 20px;
+    border-radius: 1.2rem;
     overflow: hidden;
+}
+
+.feedback {
+    padding: 1rem;
 }
 
 .feedback h4 {
@@ -327,16 +338,16 @@ tbody tr:hover {
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.2rem;
+    padding: 1.5rem;
 }
 
 form input,textarea {
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     width: 100%;
-    padding: 10px;
+    padding: 0.6rem;
     font-family: Sedan;
 }
 
@@ -352,9 +363,9 @@ form input[type="submit"] {
     background-color: #1fed45;
     color: black;
     width: 100%;
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     cursor: pointer;
 }
@@ -362,19 +373,19 @@ form input[type="submit"] {
 footer {
     background-color: black;
     color: #fff;
-    padding: 10px;
+    padding: 0.5rem;
     /* margin: 10px; */
     display: flex;
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 1.2rem;
 }
 
 footer i {
-    font-size: 32px;
-    margin: 15px;
+    font-size: 2rem;
+    margin: 1rem;
     color: #fff;
 }
 
@@ -384,26 +395,3 @@ footer i:hover {
 
 
 /* Media query for Tablet View */ 
-
-@media screen and (max-width: 780px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        position: sticky;
-        top: 20px;
-        flex-wrap: wrap;
-        background-color: black;
-        height: 20vh;
-        border-radius: 30px;
-        color: #fff;
-        padding: 10px;
-    }
-}
