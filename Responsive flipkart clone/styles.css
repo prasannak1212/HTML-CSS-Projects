@@ -199,3 +199,9 @@ footer {
   font-size: 12px;
   color: #fff;
 }
+
+/* Mobile View */
+
+@media only screen and (max-width: 480px) {
+  
+}
