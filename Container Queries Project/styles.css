@@ -57,8 +57,24 @@ article {
   font-size: clamp(1rem, 3cqi, 1.6rem);
 }
 
+.article-container {
+  container: article / inline-size;
+}
+
 h3 {
   font-size: clamp(1.4rem, 4cqi, 2.5rem);
+}
+
+@container article (inline-size>500px) {
+  article {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@container article (inline-size>800px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (width>800px) {
