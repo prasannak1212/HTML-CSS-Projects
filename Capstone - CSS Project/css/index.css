@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
+:root {
+    --primary-color: #ff511a;
+    --secondary-color: #43ba7f;
+    --text-color: #212741;
+    --bg-color: #fff;
+    --link-color: #bf998f;
+    --dark-bg-color: #3a3e4d;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--dark-bg-color);
+    color: var(--link-color);
+}
+
+header .logo {
+    width: 6.25rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list a {
+    color: var(--link-color);
+}
+
+.nav-list a:active, .nav-list a:hover {
+    color: var(--primary-color);
+}
