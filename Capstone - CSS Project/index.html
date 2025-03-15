@@ -18,7 +18,7 @@
                     <img class="img-fluid w-100" src="/assets/images/logo.jpg" alt="The Logo">
                 </div>
 
-                <ul class="nav-list d-sm-none d-md-flex">
+                <ul class="nav-list d-none d-md-flex">
                     <li><a class="text-decoration-none fs-5 fs-md-3 active" href="#hero">Home</a></li>
                     <li><a class="text-decoration-none fs-5 fs-md-3 " href="#services">Services</a></li>
                     <li><a class="text-decoration-none fs-5 fs-md-3" href="#about">About</a></li>
@@ -27,9 +27,9 @@
                 </ul>
 
                 <!-- Bootstrap Nav Collapse -->
-                <nav class="navbar navbar-expand d-sm-flex d-md-none">
+                <nav class="navbar navbar-expand d-flex d-md-none">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="#nav-list" aria-expanded="false" aria-label="expand navigation">
+                        <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#nav-list" aria-controls="#nav-list" aria-expanded="false" aria-label="expand navigation">
                         <i class="fa-solid fa-bars"></i>
                         </button>
                     </div>
@@ -49,11 +49,30 @@
         </div>
     </header>
 
-    <section id="hero" class="hero">
-
+    <section id="hero" class="hero p-4">
+        <div class="hero-container">
+            <div class="heading display-2">Best <em>EdTech</em> Company & Programming <em>Services</em></div>
+            <div class="divider my-5"></div>
+            <p class="hero-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero totam illo soluta tenetur est ipsa consectetur voluptas aut omnis iste magni nihil quia ratione, a tempora id ipsam veniam quas.</p>
+        </div>
     </section>
 
-    <section id="services" class="services"></section>
+    <section id="services" class="services p-4">
+        <h3 class="heading" style="color: var(--primary-color)">SERVICES</h3>
+        <h1 class="title">Learn Skills</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>Interactive Platform</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+    </section>
 
     <section class="banner"></section>
 
