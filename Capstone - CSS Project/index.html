@@ -57,28 +57,152 @@
         </div>
     </section>
 
-    <section id="services" class="services p-4">
-        <h3 class="heading" style="color: var(--primary-color)">SERVICES</h3>
-        <h1 class="title">Learn Skills</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h6>Interactive Platform</h6>
-                        </div>
-                    </div>
+    
+    <div class="container p-4">
+        <section id="services" class="row services">
+            <div class="section-heading col-12">
+                <h3>SERVICES</h3>
+                <h1>Learn Skills</h1>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h5>Interactive Platform</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellendus totam provident aperiam voluptatibus repudiandae dolorem iure, similique eveniet id magnam temporibus, sunt labore quae vel suscipit odit. Corporis, officiis!</p>
+                </div>                
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <h5>Doubt Support</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos repellendus totam provident aperiam voluptatibus repudiandae dolorem iure, similique eveniet id magnam temporibus, sunt labore quae vel suscipit odit. Corporis, officiis!</p>
                 </div>
-                <div class="col-6"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h5>Interactive Coding Challenges</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laudantium accusantium hic necessitatibus facere excepturi, atque culpa dolorem numquam ipsa autem non harum et. Modi, in. Quae vel in eius.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h5>Mobile and Tablet Coding!</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laudantium accusantium hic necessitatibus facere excepturi, atque culpa dolorem numquam ipsa autem non harum et. Modi, in. Quae vel in eius.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h5>Support for Coding Enthusiasts</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro nihil dolorem maxime aliquam? Quia fugiat aspernatur nesciunt quae, libero reiciendis odit optio omnis eligendi in dicta cupiditate facilis dolorum.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="service-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h5>Customizable Coding Experience</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error suscipit at eos exercitationem aliquid soluta deleniti facilis voluptate, non laudantium. Animi debitis odio ipsam temporibus inventore vitae esse reiciendis ratione!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="banner container-fluid">
+        <div class="banner-content">
+            <div class="banner-text">
+                Coding <em style="color: var(--secondary-color)">Solutions</em> and <em>Programming</em> Mastery
+            </div>
+            <div class="banner-buttons">
+                <a href="#about" class="btn discover-btn">Discover More</a>
+                <a href="#contact" class="btn contact-btn">Contact Us</a>
+                <!-- <button class="discover-btn">Discover More</button>
+                <button class="contact-btn">Contact Us</button> -->
             </div>
         </div>
     </section>
 
-    <section class="banner"></section>
+    <div class="container-fluid">
+        <section id="about" class="row about p-4">
+            <div class="section-heading col-12">
+                <h3>ABOUT US</h3>
+                <h1>Know Us Better</h1>
+                <a href="#" class="btn btn-warning text-dark p-3 my-3">Coding Courses</a>
+            </div>
+            <ul class="course-list">
+                <li class="list-head bg-dark-subtle d-none d-md-flex">
+                    <span>Course Title</span>
+                    <span>Duration</span>
+                    <span>Level</span>
+                    <span>Instructor</span>
+                </li>
+                <li>
+                    <span class="item-title">Web Development Basics</span>
+                    <span>3 Months</span>
+                    <span>Beginner</span>
+                    <span>John Doe</span>
+                </li>
+                <li class="bg-dark-subtle">
+                    <span class="item-title">Advanced JavaScript</span>
+                    <span>4 Months</span>
+                    <span>Intermediate</span>
+                    <span>John Smith</span>
+                </li>
+                <li>
+                    <span class="item-title">Data Structures</span>
+                    <span>6 Months</span>
+                    <span>Advanced</span>
+                    <span>Chris Williams</span>
+                </li>
+                <li class="bg-dark-subtle">
+                    <span class="item-title">Full Stack Development</span>
+                    <span>8 Months</span>
+                    <span>Expert</span>
+                    <span>Emily Johnson</span>
+                </li>
+            </ul>
+        </section>
+    </div>
 
-    <section id="about" class="about"></section>
-
-    <section class="learning-plan-form"></section>
+    <div class="container-fluid">
+        <section class="row learning-plan-form align-items-center">
+            <div class="image d-none d-md-block col-md-5">
+                <img src="assets/images/pic.png" alt="Student Picture">
+            </div>
+            <form class="col-md-7" action="#" method="post">
+                <div class="form-heading">
+                    <p>YOUR CODING JOURNEY</p>
+                    <h3>Create A Learning Plan</h3>
+                </div>
+                <div class="fields field-1">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" class="name" name="name">
+                </div>
+                <div class="fields field-2">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" class="email" name="email">
+                </div>
+                <div class="fields field-3">
+                    <label for="learning-area">Learning Area</label>
+                    <input type="text" id="learning-area" class="learning-area" name="learning-area">
+                </div>
+                <div class="fields field-4">
+                    <label for="goal">Your Goal</label>
+                    <select name="goal" id="goal" class="goal">
+                        <option value="Choose an Option">Choose an Option</option>
+                        <option value="Web Development Basics">Web Development Basics</option>
+                        <option value="Advanced JavaScript">Advanced JavaScript</option>
+                        <option value="Data Strucutures">Data Structures</option>
+                        <option value="Full Stack Development">Full Stack Development</option>
+                    </select>
+                </div>
+                <div class="field-5">
+                    <button class="submit" id="submit" name="submit">Submit Now</button>
+                </div>
+            </form>
+        </section>
+    </div>
 
     <section id="testimonial" calass="testimonial"></section>
 
