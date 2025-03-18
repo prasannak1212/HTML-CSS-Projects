@@ -355,12 +355,27 @@ em {
     color: var(--primary-color);
 }
 
+#testimonial-carousel {
+    width: 90%;
+    justify-self: center;
+}
+
+#testimonial-carousel button {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #f1f19e;
+}
+
 .carousel-control-prev {
-    left: -10%;
+    left: 10%;
+    align-self: center;
 }
 
 .carousel-control-next {
-    right: -10%;
+    left: 100%;
+    align-self: center;
 }
 
 .carousel-control-prev-icon,
@@ -606,6 +621,13 @@ em {
 
     .course-list li {
         flex-direction: column;
+    }
+    
+    #testimonial-carousel {
+        width: 100%;
+    }
+    #testimonial-carousel button {
+        display: none;
     }
 }
 
