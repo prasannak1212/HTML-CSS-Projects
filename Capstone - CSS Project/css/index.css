@@ -309,6 +309,65 @@ em {
     font-weight: 600;
 }
 
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px var(--primary-color);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.testimonial-card .image-container {
+    width: 30%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.testimonial-card .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.testimonial-card i {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 0.625rem;
+    font-size: 2vw;
+    margin-bottom: 0.625rem;
+}
+
+.testimonial-card h4 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.testimonial-card p {
+    font-size: 1.4vw;
+}
+
+.testimonial-card span {
+    font-size: 2vw;
+    color: var(--primary-color);
+}
+
+.carousel-control-prev {
+    left: -10%;
+}
+
+.carousel-control-next {
+    right: -10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
 
 @keyframes slideIn {
     from {
