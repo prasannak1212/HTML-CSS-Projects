@@ -317,6 +317,8 @@ em {
 
 .testimonial-card {
     display: flex;
+    width: 80%;
+    justify-self: center;
     align-items: center;
     justify-content: space-between;
     border: 1px solid white;
@@ -371,26 +373,28 @@ em {
     color: var(--primary-color);
 }
 
-/* #testimonial-carousel {
+#testimonial-carousel {
     width: 90%;
     justify-self: center;
-} */
+}
 
-/* #testimonial-carousel button {
+.carousel-inner {
+    width: 80%;
+}
+
+#testimonial-carousel button {
     height: 5vw;
     width: 5vw;
     border-radius: 50%;
     opacity: 0.5;
     background-color: #f1f19e;
-} */
+}
 
 .carousel-control-prev {
-    left: -10%;
     align-self: center;
 }
 
 .carousel-control-next {
-    left: 95%;
     align-self: center;
 }
 
