@@ -403,6 +403,61 @@ em {
     filter: invert(1);
 }
 
+.contact-container {
+    overflow-y: scroll;
+}
+
+#contact {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.map {
+    z-index: -1;
+}
+
+.contact-card-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    bottom: -5rem;
+    z-index: 100;
+    width: 100%;
+}
+
+.card {
+    width: 30%;
+    margin: 0.625rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card i {
+    margin-bottom: 0.625rem;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.inquiry-form {
+    margin: 5rem;
+}
+
 
 @keyframes slideIn {
     from {
@@ -416,7 +471,7 @@ em {
     }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 920px) {
 
     .hero {
         display: flex;
@@ -478,6 +533,25 @@ em {
 
     .learning-plan-form .image img {
         display: none;    
+    }
+
+    .contact-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        width: 100%;
+        position: absolute;
+        bottom: -35rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0.625rem;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 1rem;
     }
     
 }
@@ -555,6 +629,15 @@ em {
         height: 3rem;
         font-weight: 600;
         white-space: nowrap;
+    }
+
+    .contact-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        width: 100%;
     }
 }
 
@@ -661,5 +744,15 @@ em {
     #testimonial-carousel button {
         display: none;
     }
+
+    .contact-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        width: 100%;
+    }
+
 }
 
